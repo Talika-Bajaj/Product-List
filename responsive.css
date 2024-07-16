@@ -1,0 +1,51 @@
+@media screen and (width>=700px) {
+
+    /* main */
+    main {
+        width: 100%;
+        padding: 75px 45px;
+    }
+
+    /* overlay div */
+    .overlay {
+        align-items: center;
+    }
+
+    .confirm-order {
+        width: 500px;
+        border-radius: 15px;
+    }
+
+    /* left-side */
+    .cards {
+        grid-template-columns: 48% 48%;
+    }
+}
+
+@media screen and (width>=1060px) {
+
+    /* container */
+    .container {
+        grid-template-columns: 63% 35%;
+    }
+
+    /* right-side */
+    .cart-page {
+        padding: 40px 27px;
+    }
+}
+
+@media screen and (width>=1500px) {
+
+    /* left-side */
+    .cards {
+        grid-template-columns: 31% 31% 31%;
+    }
+}
+@media screen and (width>=2000px) {
+
+    /* left-side */
+    .cards {
+        grid-template-columns: 22% 22% 22% 22%;
+    }
+}
