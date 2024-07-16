@@ -219,7 +219,7 @@ main {
 .data {
     display: grid;
     grid-template-columns: 100%;
-    /* gap: 5px; */
+    gap: 2px;
 }
 
 .category {
