@@ -48,7 +48,7 @@ function renderData(data) {
             </div>
             <div class="data">
                 <p class="category">${card.category}</p>
-                <h2 class="name">${card.name}</h2>
+                <p class="name">${card.name}</p>
                 <p class="price">$ ${card.price.toFixed(2)}</p>
             </div>
         </div> `;

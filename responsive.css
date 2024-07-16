@@ -3,7 +3,7 @@
     /* main */
     main {
         width: 100%;
-        padding: 75px 45px;
+        padding: 65px 45px;
     }
 
     /* overlay div */
@@ -24,9 +24,14 @@
 
 @media screen and (width>=1060px) {
 
+    /* main */
+    main {
+        padding: 65px 75px;
+    }
+
     /* container */
     .container {
-        grid-template-columns: 63% 35%;
+        grid-template-columns: 66% 32%;
     }
 
     /* right-side */
@@ -35,13 +40,14 @@
     }
 }
 
-@media screen and (width>=1500px) {
+@media screen and (width>=1300px) {
 
     /* left-side */
     .cards {
         grid-template-columns: 31% 31% 31%;
     }
 }
+
 @media screen and (width>=2000px) {
 
     /* left-side */

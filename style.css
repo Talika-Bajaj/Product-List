@@ -25,7 +25,7 @@ body {
 }
 
 main {
-    padding: 75px 25px;
+    padding: 65px 25px;
     margin: auto;
 }
 
@@ -219,7 +219,7 @@ main {
 .data {
     display: grid;
     grid-template-columns: 100%;
-    gap: 5px;
+    /* gap: 5px; */
 }
 
 .category {
@@ -228,13 +228,14 @@ main {
 }
 
 .name {
+    font-size: 18px;
     font-weight: 600;
     color: var(--Rose_900);
 }
 
 .price {
     font-weight: 600;
-    font-size: 24px;
+    font-size: 17px;
     color: var(--Red);
 }
 
