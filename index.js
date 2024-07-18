@@ -16,6 +16,7 @@ const confirmTotal = document.querySelector('.confirm-total');
 const removeButtons = document.getElementsByClassName('remove');
 const orderItems = document.querySelector('.order-items');
 const orderTotal = document.querySelector('.order-total');
+const confirmContainer = document.querySelector('.confirm-order');
 
 async function getData() {
     try {
@@ -169,6 +170,7 @@ function removeItem(params) {
 confirm.addEventListener('click', () => {
     overlay.style.display = 'flex';
     confirmOrder();
+    confirmContainer.style.display = 'grid';
 })
 
 //function to display item in the order 

@@ -43,15 +43,29 @@ main {
     align-items: end;
 }
 
+.dialog {
+    padding: 30px 5px;
+    position: absolute;
+    /* display: none; */
+    z-index: 1040;
+    margin: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    margin: 1.5rem auto;
+    width: fit-content;
+}
+
 .confirm-order {
-    display: grid;
+    /* display: grid; */
+    display: none;
     grid-template-columns: 100%;
-    gap: 15px;
+    gap: 25px;
     width: 100vw;
     background-color: #fff;
-    max-height: 90vh;
-    overflow-y: auto;
-    padding: 30px 20px;
+    padding: 40px 24px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
