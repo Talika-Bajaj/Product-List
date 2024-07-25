@@ -23,7 +23,7 @@ async function getData() {
         let response = await fetch('./data.json');
         let data = await response.json();
         renderData(data);
-    } catch (errro) {
+    } catch (error) {
         console.log('An error occurred ', error)
     }
 }
@@ -65,6 +65,10 @@ function showCartBtn(params) {
         cart.addEventListener('click', () => {
             cart.style.display = 'none';
             addToCart[index].style.display = 'flex';
+            quantityElement[index].textContent = '1';
+            dessertImage[index].style.border = '4px solid hsl(14, 86%, 42%)';
+            updateTotalQuantity();
+            addItemsinCart();
         })
     });
 }
