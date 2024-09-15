@@ -173,6 +173,7 @@ function removeItem(params) {
 //event listener on confirm order button
 confirm.addEventListener('click', () => {
     overlay.style.display = 'flex';
+    document.documentElement.scrollTop = 0;
     confirmOrder();
     confirmContainer.style.display = 'grid';
 })

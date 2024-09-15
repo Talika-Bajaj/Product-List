@@ -11,9 +11,24 @@
         align-items: center;
     }
 
+    .dialog {
+        position: absolute;
+        top: 11%;
+        transform: translate(-50%, 0);
+    }
+
     .confirm-order {
         width: 500px;
         border-radius: 15px;
+    }
+
+    .order-items {
+        height: auto;
+        overflow: visible;
+    }
+
+    .show-data {
+        width: auto;
     }
 
     /* left-side */

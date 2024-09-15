@@ -19,6 +19,10 @@
     --Rose_900: hsl(14, 65%, 9%);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--Rose_50);
     height: 100%;
@@ -45,12 +49,13 @@ main {
 
 .dialog {
     padding: 30px 5px;
-    position: absolute;
+    position: fixed;
     /* display: none; */
     z-index: 1040;
     margin: auto;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .content {
@@ -63,11 +68,11 @@ main {
     display: none;
     grid-template-columns: 100%;
     gap: 25px;
-    width: 100vw;
+    width: 90vw;
     background-color: #fff;
     padding: 40px 24px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-radius: 15px;
+    /* border-top-right-radius: 15px; */
 }
 
 .head p {
@@ -86,6 +91,8 @@ main {
     display: grid;
     grid-template-columns: 100%;
     gap: 18px;
+    height: 185px;
+    overflow-y: auto;
 }
 
 .item-img {
@@ -103,6 +110,7 @@ main {
 .show-data {
     display: flex;
     gap: 12px;
+    width: 180px;
 }
 
 .item-info {
